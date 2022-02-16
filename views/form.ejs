@@ -1,0 +1,39 @@
+<html>
+    <h1>Formulario de programadores</h1>
+
+    <form action="/programadores/form" method="post" enctype="multipart/form-data">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="name">
+        <br><br>
+        <label for="text">Apellido</label>
+        <input type="text" name="lastname"  >
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="">
+        <br><br>
+        <label for="experiencia">Experiencia:</label>
+        <br>
+        <label for="si">Si</label>
+        <input type="radio" name="experiencia"  value="si">
+        <label for="No">No</label>
+        <input type="radio" name="experiencia"  value="no">
+        <br><br>
+        <label for="seniority">Seniority</label>
+        <select name="senioritySelect" >
+            <option value=" " >Selecciona un seniority</option>
+            <option value="1">Trainee</option>
+            <option value="2">Junior</option>
+            <option value="3">Semi Senior</option>
+            <option value="4">Senior</option>
+            <option value="5">Leader</option>
+            <option value="6">Arquitecto</option>
+        </select>
+        <br><br>
+        <label for="imageProgramer">Imagen de perfil:</label>
+        <br>
+        <input type="file" name="file" id="file" value="fileName">
+        <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</html>

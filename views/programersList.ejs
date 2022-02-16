@@ -1,0 +1,52 @@
+<html>
+    <body>
+        <h1>Programers List</h1>
+        <!-- <ul>
+            <% for (let i= 0; i< programers.length; i++){ %> 
+                <li>
+                   <a href="/programadores/detail/<%= programers[i].id %> "><%= programers[i].name %> </a> 
+                  <form action="/programadores/delete/<%= programers[i].id %>?_method=DELETE" method="post"><button type="submit">Delete</button></form>
+                </li>
+                <% } %> 
+        </ul>
+        <ul> -->
+    
+
+            <div>
+                <% programers.forEach(programer=>{%>
+                    <figure>
+                        <img src="/images/<%=programer.fileName ? programer.fileName: 'default.jpg'%>" alt="" height="150">
+                    </figure>
+                    
+                    <div>
+                        <h2><%= programer.name%> <%= programer.lastname%> </h2>
+                   
+                        <p>
+                            <% if ( programer.senioritySelect == "1" ) { %>
+                              <h3>Trainee</h3> 
+                              <% } else if (programer.senioritySelect =="2") { %>
+                                <h3>Junior</h3> 
+                                <% } else if (programer.senioritySelect =="3") { %>
+                                    <h3>Seniority:Semi Senior</h3> 
+                                <% } else if (programer.senioritySelect =="4") { %>
+                                     <h3>Senior</h3> 
+                                <% } else if (programer.senioritySelect =="5") { %>
+                                    <h3>Leader</h3> 
+                                <% } else if (programer.senioritySelect =="6") { %>
+                                        <h3>Arquitecto</h3>     
+                           <% } %> 
+                        </p>
+                    </div>
+
+                <%  }) %> 
+            </div>
+        
+        </ul>
+        <button><a href="/programadores/form">Agregar programador</a></button>
+        <h2>Search</h2>
+        <form action="/programadores/search" method="get">
+            <input type="text" name="buscado">
+            <input type="submit" value="Search">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+[
+ {
+  "id": "1",
+  "name": "Luana",
+  "lastname": "Mingione",
+  "email": "mingluana2020@gmail.com",
+  "experiencia": "no",
+  "senioritySelect": "1",
+  "fileName": "programer-1645018335026.jpg"
+ },
+ {
+  "id": "2",
+  "name": "Alexis",
+  "lastname": "Benitez",
+  "email": "alexShady@gmail.com",
+  "experiencia": "si",
+  "senioritySelect": "3",
+  "fileName": null
+ },
+ {
+  "id": "3",
+  "name": "Jorge",
+  "lastname": "Carloto",
+  "email": "carlotoGeorge@gmail.com",
+  "experiencia": "si",
+  "senioritySelect": "2",
+  "fileName": null
+ },
+ {
+  "id": "4",
+  "name": "Franco",
+  "lastname": "Sanchez",
+  "email": "sanchezFranco@gmail.com",
+  "experiencia": "si",
+  "senioritySelect": "2",
+  "fileName": null
+ },
+ {
+  "id": "5",
+  "name": "Zeus",
+  "lastname": "Mingione",
+  "email": "zeusMing@gmail.com",
+  "experiencia": "no",
+  "senioritySelect": "1",
+  "fileName": null
+ },
+ {
+  "id": "6",
+  "name": "Cosme",
+  "lastname": "Fulanito",
+  "email": "fulanitoCosme@gmail.com",
+  "experiencia": "no",
+  "senioritySelect": "1",
+  "fileName": null
+ },
+ {
+  "name": "Luana",
+  "lastname": "Mingione",
+  "email": "mingluana2020@gmail.com",
+  "experiencia": "no",
+  "senioritySelect": "1",
+  "fileName": "programer-1645018623099.jpg",
+  "id": 7
+ },
+ {
+  "name": "Camila",
+  "lastname": "Fernandez",
+  "email": "camiF@gmail.com",
+  "experiencia": "si",
+  "senioritySelect": "5",
+  "fileName": "programer-1645018698810.jpg",
+  "id": 8
+ }
+]

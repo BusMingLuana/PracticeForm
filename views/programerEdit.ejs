@@ -1,0 +1,15 @@
+<html>
+    <h1>Formulario de edición, programador: <%=programerEdit.name %> <%= programerEdit.lastName %> </h1>
+
+    <form action="/programadores/edit?_method=PUT" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="name" value="<%= programerEdit.name %> ">
+        <br><br>
+        <label for="text">Apellido</label>
+        <input type="text" name="lastname" value="<%= programerEdit.lastName %> ">
+        <br><br>
+       
+        <input type="submit" value="Enviar">
+
+    </form>
+</html>

@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>Programers List</h1>
+        <ul>
+            <% for (let i= 0; i< programadorEncontrado.length; i++){ %> 
+                <li>
+                   <a href="/programers/detail/<%= programadorEncontrado[i].id %> "><%= programadorEncontrado[i].name %> </a> 
+                </li>
+                <% } %> 
+        </ul>
+        
+    </body>
+</html>
