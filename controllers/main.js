@@ -1,7 +1,7 @@
 
 const { check, validationResult, body } = require('express-validator')
 const fs = require('fs')
-
+const User = require('../models/User')
 
 const mainController = {
     index: (req,res)=>{
@@ -15,9 +15,11 @@ const mainController = {
     },
     processRegister:(req,res) =>{
         
+        User.create(req.body)
+       return res.redirect('/register')
     },
 
-    
+
     processlogin:(req,res) =>{
        let errors = validationResult(req);
        if(errors.isEmpty()){

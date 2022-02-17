@@ -10,7 +10,10 @@ const User = {
     generateId: function () {
          let allUsers = this.findAll();
          let lastUser = allUsers.pop();
-         return lastUser.id + 1
+         if (lastUser) {
+             return lastUser.id + 1 
+         } 
+         return 1; //si no tengo usuario devuelvo el 1 
     },
     findAll: function (){
         return this.getData();
@@ -28,10 +31,21 @@ const User = {
 
     create: function (userData) {
         let allUsers = this.findAll();
-        allUsers.push(userData);
+        let newUser = {
+            id:this.generateId(),
+            ...userData
+        }
+        allUsers.push(newUser);
         fs.writeFileSync(this.filename, JSON.stringify(allUsers,null, ' '))
+        return newUser;
+    },
+    delete: function (id) {
+        let allUsers = this.findAll();
+        let findUsers = allUsers.filter(oneUser => oneUser.id !== id)
+        fs.writeFileSync(this.filename, JSON.stringify(findUsers,null, ' '))
         return true;
     }
 }
 
-console.log(User.create({name:'Rocio', lastname:'Ferrua', email: 'nicoferrua@gmail.com', password: 'crossfityani'}));
+
+module.exports = User;
