@@ -10,6 +10,14 @@ const mainController = {
     login: (req,res)=>{
         return res.render('main/login')
     },
+    register:(req,res)=>{
+        res.render('main/register')
+    },
+    processRegister:(req,res) =>{
+        
+    },
+
+    
     processlogin:(req,res) =>{
        let errors = validationResult(req);
        if(errors.isEmpty()){

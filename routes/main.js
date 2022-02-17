@@ -18,6 +18,11 @@ router.get('/pruebaSession',(req,res)=>{
    res.send('session tiene el numero: ' + req.session.numeroVisita)  
 });
 
+// Register:
+router.get('/register', mainController.register);
+router.post('/register',mainController.processRegister)
+
+// Login
 router.get('/login', mainController.login)
 router.post('/login',[
     check('email').isEmail().withMessage('email invalido'),
