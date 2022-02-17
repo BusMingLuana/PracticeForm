@@ -9,4 +9,4 @@ Dependencias utilizadas:
 -Method override
 -Multer
 -Nodemon
--bcrypt
+-bcryptJs
