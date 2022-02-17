@@ -70,5 +70,14 @@
   "senioritySelect": "5",
   "fileName": "programer-1645018698810.jpg",
   "id": 8
+ },
+ {
+  "name": "Luana",
+  "lastname": "Mingione",
+  "email": "mingluana2020@gmail.com",
+  "experiencia": "si",
+  "senioritySelect": "4",
+  "fileName": "programer-1645022867326.jpg",
+  "id": 9
  }
 ]

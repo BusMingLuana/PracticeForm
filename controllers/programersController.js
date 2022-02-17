@@ -14,7 +14,7 @@ const programersController = {
    //    ];
    //  res.render('programersList',{programers})
    let programers = programersModel.all();
-   res.render('programersList', {programers})
+   res.render('programer/programersList', {programers})
    },
    
    buscar:(req,res)=>{
@@ -33,10 +33,10 @@ const programersController = {
           }
          
       }
-    res.render('programadorSearch', {programadorEncontrado})
+    res.render('programer/programadorSearch', {programadorEncontrado})
  },
  form:(req,res) =>{
-    res.render('form')
+    res.render('programer/form')
  },
  create:(req,res) =>{
     let programador = {
@@ -45,7 +45,7 @@ const programersController = {
     }
 
     programerId = programersModel.create(programador)
-   res.redirect('/programadores')
+   res.redirect('programer/programadores')
 
   console.log(programador)
 },
@@ -59,7 +59,7 @@ edit: (req,res) =>{
    ];
 
    let programerEdit= programers[idProgramer]
-    res.render('programerEdit',{programerEdit})
+    res.render('programer/programerEdit',{programerEdit})
 },
 store:(req,res) =>{
    res.send('put bien')

@@ -5,6 +5,9 @@ const router = express.Router();
 const multer = require('multer'); 
 const path = require('path')
 const programersController = require('../controllers/programersController')
+const logDbMiddleware = require('../middlewares/logDbMiddleware')
+
+
 
 // multer: donde queremos que guarde esos archivos y con qué nombre
 const storage = multer.diskStorage({
@@ -30,7 +33,7 @@ router.get('/search', programersController.buscar)
 
 // formulario
 router.get('/form', programersController.form)
-router.post('/form', upload.single('file'),programersController.create)//file es el nombre del input
+router.post('/form',logDbMiddleware, upload.single('file'),programersController.create)//file es el nombre del input
 
 // edit
 router.get('/edit/:idProgramer', programersController.edit)
