@@ -1,1 +1,1 @@
-Se ingresó en la página/register
+Se ingresó en la página/login

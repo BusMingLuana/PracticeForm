@@ -12,5 +12,33 @@
   "lastname": "Benitez",
   "email": "alexshady008.2@gmail.com",
   "password": "alexis154"
+ },
+ {
+  "id": 3,
+  "name": "Zeus",
+  "lastname": "Mingione",
+  "email": "zeusMing@gmail.com",
+  "password": "$2a$10$a54ysW8Z.h9r/eqrBsGIneOg.I/Zzparh7S9LJGkuWHmWjt1pta4u"
+ },
+ {
+  "id": 4,
+  "name": "Luana",
+  "lastname": "Mingione",
+  "email": "mingluana2020@gmail.com",
+  "password": "$2a$10$D8BMhBTZJoB0XUjCBPv3yeUIJQgQiqPQBSw6y/9zqXVK.A/L14liG"
+ },
+ {
+  "id": 5,
+  "name": "Arya",
+  "lastname": "Stark",
+  "email": "starkAria@gmail.com",
+  "password": "$2a$10$7Fj5e0tO9I9votttffrDTO40iewYCWPiWAx4n9PubAMR3xjtxSpUC"
+ },
+ {
+  "id": 6,
+  "name": "",
+  "lastname": "",
+  "email": "",
+  "password": "$2a$10$05GEYswydVoWUU/fMbarj.6dcfJ72WOpcWIPvrXxNgh8hqskZtCB."
  }
 ]

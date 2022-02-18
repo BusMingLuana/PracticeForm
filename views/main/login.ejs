@@ -7,6 +7,7 @@
     <title>Login</title>
 </head>
 <body>
+    <h1>Login</h1>
     <%if (typeof errors != 'undefined') { %>
         <p style="color:red">ERROR</p>
         <ul>
@@ -20,6 +21,11 @@
      <form action="/login" method="post">
          <label for="">Email</label>
          <input type="email" name="email" id="">
+          <% if (locals.errors && errors.email) { %>
+            <div>
+                <%= errors.email.msg %> 
+            </div>
+          <% } %>
          <br><br>
          <label for="">Contraseña</label>
          <input type="password" name="password" id="">
@@ -29,6 +35,8 @@
          <br>
          <input type="submit" value="Login">
      </form>
+     
+     <button><a href="/">Home</a></button>
     
 </body>
 </html>
